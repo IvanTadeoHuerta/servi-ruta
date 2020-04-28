@@ -1,0 +1,8 @@
+{
+  "appId": "com.serviruta.app",
+  "appName": "com.servi-ruta.app",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {}
+}
