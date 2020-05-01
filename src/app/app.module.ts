@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { RouterModule } from "@angular/router";
+import { HomeComponent } from "src/app/home/home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
