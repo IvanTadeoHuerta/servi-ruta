@@ -1,6 +1,70 @@
-<ion-content
-[scrollEvents]="true" class="background">
-  <div slot="fixed">
-     
-  </div>
+<ion-content [scrollEvents]="true" class="background">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="ion-align-self-center">
+                <ion-img src="../../assets/logo.png" style="width: 100px; height: 100px;"></ion-img>
+                <h1>BIENVENIDO</h1>
+                <form class="list-form" size-lg="6" size-md="10" size-sm="12" size-xl="12" size-xs="12">
+                    <ion-item>
+                        <ion-label floating>
+                            <ion-icon name="person-outline"></ion-icon>
+                            Email
+                        </ion-label>
+                        <ion-input type="email"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label floating>
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            Password
+                        </ion-label>
+                        <ion-input type="password"></ion-input>
+                    </ion-item>
+                    <ion-item lines="none">
+                        <ion-label slot="end">
+                            <a href="">Olvidó su contraseña?</a>
+                        </ion-label>
+                    </ion-item>
+                    <ion-button expand="full">
+                        <ion-icon slot="start" name="log-in-outline"></ion-icon>
+                        Iniciar sesión
+                    </ion-button>
+                </form>
+
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12">
+                <div class="ion-text-center">
+                    <p>O inicia sesión con:</p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size-lg="4" size-md="4" size-sm="12" size-xl="12" size-xs="12">
+                <ion-button expand="block">
+                    <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size-lg="4" size-md="4" size-sm="12" size-xl="12" size-xs="12">
+                <ion-button expand="block" color="danger">
+                    <ion-icon slot="icon-only" name="logo-google"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col size-lg="4" size-md="4" size-sm="12" size-xl="12" size-xs="12">
+                <ion-button expand="block" color="tertiary">
+                    <ion-icon slot="icon-only" name="logo-twitter"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12">
+                    <div class="ion-text-center">
+                        <p>Eres nuevo?.
+                            <a href="#">Registrate aquí</a>
+                        </p>
+                    </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
