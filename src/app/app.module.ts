@@ -9,7 +9,11 @@ import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from "@angular/router";
 import { HomeComponent } from "src/app/home/home.component";
 import { HeaderComponent } from './header/header.component';
+import * as firebase from 'firebase/app';
+import { environment } from "src/environments/environment";
+import { HttpClientModule } from "@angular/common/http";
 
+firebase.initializeApp( environment.firebaseConfig);
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     IonicModule.forRoot()
   ],
   providers: [],
